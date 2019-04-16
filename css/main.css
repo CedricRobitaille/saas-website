@@ -1,0 +1,112 @@
+html {
+  background-color: #2B2C34;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  background-image: url("../images/background.gif");
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #1D262B;
+  opacity: 0.65;
+  max-height: 5rem;
+}
+
+footer {
+  background-color: #1D262B;
+  opacity: 0.65;
+}
+
+header a {
+  color: #fff;
+}
+
+.card {
+  background-color: rgba(92, 96, 97, 0.6);
+
+}
+
+section .btn {
+  background-color: #1D262B;
+}
+
+html .btn {
+  background-color: rgba(92, 96, 97, 0.6);
+  border-radius: 8px;
+}
+
+.svg {
+  max-height: 3.5rem;
+  border-width: 3px;
+}
+
+.logo {
+  max-height: 6rem;
+}
+
+.diamond {
+  max-width: 2.5rem;
+}
+
+.compare {
+  max-height: 4rem;
+}
+
+h1 {
+  font-family: Exo, sans-serif;
+}
+
+h2 {
+  font-family: Exo, sans-serif;
+}
+
+h3 {
+  font-family: Exo, sans-serif;
+}
+
+.tera {
+  font-family: Exo, sans-serif;
+}
+
+.btn {
+  font-family: Exo, sans-serif;
+}
+
+.ryan {
+  max-width: 50%;
+}
+
+.beginner .border-left {
+  border-left: 2px solid rgba(148, 158, 255, 0.4);
+}
+
+.beginner .border-right {
+  border-right: 2px solid rgba(148, 158, 255, 0.4);
+}
+.pro .border-left {
+  border-left: 2px solid rgba(204, 161, 255, 0.4);
+}
+
+.pro .border-right {
+  border-right: 2px solid rgba(204, 161, 255, 0.4);
+}
+.business .border-left {
+  border-left: 2px solid rgba(152, 135, 232, 0.4);
+}
+
+.business .border-right {
+  border-right: 2px solid rgba(152, 135, 232, 0.4);
+}
+
+th {
+  border: 0;
+}
+td {
+  border: 0;
+}
+tr:nth-child(even) {
+  rgba(92, 96, 97, 0.8);
+}
