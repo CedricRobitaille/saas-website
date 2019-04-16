@@ -25,17 +25,19 @@ header a {
 }
 
 .card {
-  background-color: rgba(92, 96, 97, 0.6);
+  background-color: rgba(92, 96, 97, 0.35);
 
 }
 
-section .btn {
-  background-color: #1D262B;
-}
-
-html .btn {
-  background-color: rgba(92, 96, 97, 0.6);
+.btn {
+  background-color: rgba(92, 96, 97, 0.3);
+  border: solid 2pt rgba(255, 255, 255, 0.1);
   border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: rgba(92, 96, 97, 0.6);
+  border: solid 2pt rgba(255, 255, 255, 0.3);
 }
 
 .svg {
