@@ -8,25 +8,33 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo:400,700|Roboto+Slab:400,700" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav class="grid list-group">
-      <div class="unit unit-xs-1-3 text-center pad-t-1-2">
-        <a class="island-1-2 gutter btn" href="pricing.html">Support</a>
-      </div>
-      <div class="unit unit-xs-1-3 text-center pad-t-1-2">
-        <a href="index.html">
-          <img class="logo img-flex zindex-1000 relative" src="images/logo.svg" alt="">
-        </a>
-      </div>
-      <div class="unit unit-xs-1-3 text-center pad-t-1-2">
-        <a class="island-1-2 gutter btn" href="index.html">Log In</a>
-      </div>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+
+  <header role="banner">
+    <nav role="navigation" id="nav" tabindex="0">
+      <ol class="grid list-group">
+        <li class="unit unit-xs-1-3 text-center pad-t-1-2">
+          <a class="island-1-2 gutter btn" href="pricing.html">Support</a>
+        </li>
+        <li class="unit unit-xs-1-3 text-center pad-t-1-2">
+          <a href="#">
+            <img class="logo img-flex zindex-1000 relative wrapper" src="images/logo.svg" alt="Logo">
+          </a>
+        </li>
+        <li class="unit unit-xs-1-3 text-center pad-t-1-2">
+          <a class="island-1-2 gutter btn" href="tour.html">Sign In</a>
+        </li>
+      </ol>
     </nav>
   </header>
 
-  <main class="wrapper">
+  <main class="wrapper" role="main" id="main" tabindex="0">
     <section>
       <div class="grid">
         <div class="unit unit-xs-1 gutter pad-t push-1-2">
@@ -45,51 +53,57 @@
               <input id="email" type="email" name="email" value="" required>
             </div>
             <div class="text-center pad-t-1-2 push-none">
-              <button class="island-1-2 gutter btn" type="button" name="button">Start</button>
+              <button class="island-1-2 gutter btn" type="button">Start</button>
             </div>
           </form>
         </div>
-        <div class="gutter push">
-          <div class="unit unit-xs-1 pad-t gutter card text-center pad-b">
-            <h2 class="yotta push-1-2 beginner">Beginner</h2>
-            <p class="push-1-4">Seamlessly text, chat, and stream to colleagues, friends and family with lightning fast speeds on our Beginner program.</p>
-            <p>Have access to 20 channels at once and share files up to 10GB.</p>
+        <div class="unit unit-xs-1">
+          <div class="gutter push">
+            <div class="unit unit-xs-1 pad-t gutter card text-center pad-b">
+              <h2 class="yotta push-1-2 beginner">Beginner</h2>
+              <p class="push-1-4">Seamlessly text, chat, and stream to colleagues, friends and family with lightning fast speeds on our Beginner program.</p>
+              <p>Have access to 20 channels at once and share files up to 10GB.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section>
       <div class="gutter">
-        <div class="grid push text-center pro card relative">
+        <div class="grid push text-center card relative pro">
           <div class="unit unit-xs-1-2 border-right content-fill island-1-2">
             <h2 class="yotta">Pro</h2>
             <p class="tera">$5.00<span class="milli">/month</span></p>
-            <a class="btn island-1-2 gutter" href="checkout.html">BUY</a>
+            <a class="btn island-1-2 gutter" href="tour.html">BUY</a>
           </div>
           <div class="unit unit-xs-1-2 border-left text-center island-1-2">
             <p class="push-1-2">Unlimited Text</p>
             <p class="push-1-2">Unlimited Audio</p>
             <p class="push-1-2">Unlimited Streams</p>
-            <p class="push-1-2">Unlimited Channels</p>
+            <p class="push-1-2">Unlimited channels</p>
             <p class="push-none push-1-2">100GB of File Sharing</p>
           </div>
-          <img class="pin-ct absolute diamond" src="images/diamond-pro.svg" alt="">
+          <div class="unit unit-xs-1 pin-ct absolute">
+            <img class="diamond" src="images/diamond-pro.svg" alt="Decorative diamond">
+          </div>
         </div>
         <div class="grid push text-center business card relative">
           <div class="unit unit-xs-1-2 border-right island-1-2">
             <h2 class="yotta">Business</h2>
             <p class="tera">$7.50<span class="milli">/month</span></p>
-            <a class="btn island-1-2 gutter" href="checkout.html">BUY</a>
+            <a class="btn island-1-2 gutter" href="tour.html">BUY</a>
           </div>
           <div class="unit unit-xs-1-2 border-left island-1-2">
             <p class="push-1-2">Unlimited Text</p>
             <p class="push-1-2">Unlimited Audio</p>
             <p class="push-1-2">Unlimited Streams</p>
-            <p class="push-1-2">Unlimited Channels</p>
+            <p class="push-1-2">Unlimited channels</p>
             <p class="push-1-2">1TB of File Sharing</p>
             <p class="push-none push-1-2">24/7 Support</p>
           </div>
-          <img class="pin-ct absolute diamond" src="images/diamond-business.svg" alt="">
+          <div class="unit unit-xs-1 pin-ct absolute">
+            <img class="diamond" src="images/diamond-business.svg" alt="Decorative diamond">
+          </div>
         </div>
       </div>
     </section>
@@ -97,9 +111,7 @@
       <div class="gutter-1-4 card">
         <div class="gutter">
           <table>
-            <tr>
-              <th colspan="6" class="text-center zetta">Beginner</th>
-            </tr>
+            <caption class="text-center zetta">Beginner</caption>
             <tr class="push">
               <th scope="row"><img class="compare" src="images/text-bubble.svg" alt=""></th>
               <td><img class="compare" src="images/microphone.svg" alt=""></td>
@@ -109,27 +121,29 @@
               <td><img class="compare" src="images/folder.svg" alt=""></td>
             </tr>
             <tr>
-              <th colspan="6" class="text-center zetta">Pro</th>
+              <th scope="row" colspan="6" class="text-center zetta">Pro</th>
             </tr>
-            <tr>
-              <th scope="row"><img class="compare" src="images/text-bubble.svg" alt=""></th>
-              <td><img class="compare" src="images/microphone.svg" alt=""></td>
-              <td><img class="compare" src="images/web-cam.svg" alt=""></td>
-              <td><img class="compare" src="images/channel.svg" alt=""></td>
-              <td><img class="compare" src="images/support.svg" alt=""></td>
-              <td><img class="compare" src="images/folder.svg" alt=""></td>
-            </tr>
-            <tr>
-              <th colspan="6" class="text-center zetta">Business</th>
-            </tr>
-            <tr>
-              <th scope="row"><img class="compare" src="images/text-bubble.svg" alt=""></th>
-              <td><img class="compare" src="images/microphone.svg" alt=""></td>
-              <td><img class="compare" src="images/web-cam.svg" alt=""></td>
-              <td><img class="compare" src="images/channel.svg" alt=""></td>
-              <td><img class="compare" src="images/support.svg" alt=""></td>
-              <td><img class="compare" src="images/folder.svg" alt=""></td>
-            </tr>
+            <tbody>
+              <tr>
+                <th scope="row"><img class="compare" src="images/text-bubble.svg" alt=""></th>
+                <td><img class="compare" src="images/microphone.svg" alt=""></td>
+                <td><img class="compare" src="images/web-cam.svg" alt=""></td>
+                <td><img class="compare" src="images/channel.svg" alt=""></td>
+                <td><img class="compare" src="images/support.svg" alt=""></td>
+                <td><img class="compare" src="images/folder.svg" alt=""></td>
+              </tr>
+              <tr>
+                <th scope="row" colspan="6" class="text-center zetta">Business</th>
+              </tr>
+              <tr>
+                <th scope="row"><img class="compare" src="images/text-bubble.svg" alt=""></th>
+                <td><img class="compare" src="images/microphone.svg" alt=""></td>
+                <td><img class="compare" src="images/web-cam.svg" alt=""></td>
+                <td><img class="compare" src="images/channel.svg" alt=""></td>
+                <td><img class="compare" src="images/support.svg" alt=""></td>
+                <td><img class="compare" src="images/folder.svg" alt=""></td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
@@ -138,7 +152,9 @@
     <section class="gutter">
       <div class="grid gutter card">
         <div class="unit unit-xs-1-2 island">
-          <img class="wrapper ryan" src="images/ryan-gooseggs.jpg" alt="">
+          <div class="embed embed-4by3">
+            <img class="embed-item ryan" src="images/ryan-gooseggs.jpg" alt="">
+          </div>
         </div>
         <div class="unit unit-xs-1-2 text-center">
           <h2>Reviews</h2>
@@ -151,7 +167,7 @@
 
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <div class="pad-t">
 
     </div>
